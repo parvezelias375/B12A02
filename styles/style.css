@@ -9,6 +9,15 @@
   font-variation-settings:
     "wdth" 100;
 }
+.btn-container{
+    color: #FFFFFF;
+   background-color: #E95A08;
+    padding: 8px 85px;
+    color: white;
+    border: none;
+    font-size: 16px;
+
+}
 .header{
 
 }
@@ -73,6 +82,32 @@
 .banner-img{
     max-width: 570px;
 }
+/* plant section */
+.container{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 5px;
+    max-width: 1140px;
+    align-items: center;
+}
+.plants{
+    align-items: center;
+    max-width: 1140px;
+    margin: 120px auto;
+}
+.plant-text{
+    text-align: center;
+}
+.plant-title{
+    font-size: 50px;
+}
+.plant-description{
+    font-size: 22px;
+    color: rgba(0, 0, 0, 0.5);
+}
+.name , .price{
+text-align: center;
+}
 /* Responsive for mobile */
     @media screen and (max-width: 576px) {
       .nav-link {
@@ -81,5 +116,8 @@
      
       .banner{
         flex-direction: column-reverse;
+      }
+      .container{
+        grid-template-columns: repeat(2, 1fr);
       }
     }
