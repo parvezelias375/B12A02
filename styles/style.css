@@ -104,9 +104,18 @@
 .plant-description{
     font-size: 22px;
     color: rgba(0, 0, 0, 0.5);
+
 }
-.name , .price{
+.price{
 text-align: center;
+color: #111111;
+font-weight: bold;
+font-size: 16px;
+}
+.name{
+    text-align: center;
+color: #111111;
+font-size: 16px;
 }
 /* plant-lover */
 .plants-lover{
@@ -263,13 +272,42 @@ background-color: rgba(0, 0, 0, 0.4);
     width: 640px;
     outline: none;
 }
-
+/* footer */
+.footer{
+    display: flex;
+    margin: 50px auto;
+    max-width: 1120px;
+    gap: 80px;
+}
+.footer ul li{
+    list-style: none;
+}
+.footer-link a{
+    text-decoration: none;
+ color: rgba(107, 114, 128, 1);
+}
+.footer-description{
+    font-size: 22px;
+    color: rgba(0, 0, 0, 0.5);
+    padding: 5px 0;
+}
+.footer-title{
+    max-width: 359px;
+}
+.icons img{
+    justify-content: center;
+    
+    margin-left: 24px;
+}
+.links{
+    display: flex;
+}
 /* Responsive for mobile */
     @media screen and (max-width: 576px) {
       .nav-link {
       display: none;
       }
-     
+    
       .banner{
         flex-direction: column-reverse;
       }
@@ -305,4 +343,12 @@ background-color: rgba(0, 0, 0, 0.4);
       .form button{
         width: 30%;
       }
+      .footer{
+        flex-direction: column;
+        gap: 5px;
+      }
+      .links{
+        flex-direction: column;
+      }
+      
     }
