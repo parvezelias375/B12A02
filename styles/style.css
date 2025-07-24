@@ -73,3 +73,13 @@
 .banner-img{
     max-width: 570px;
 }
+/* Responsive for mobile */
+    @media screen and (max-width: 576px) {
+      .nav-link {
+      display: none;
+      }
+     
+      .banner{
+        flex-direction: column-reverse;
+      }
+    }
